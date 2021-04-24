@@ -1,0 +1,34 @@
+
+package assignment03;
+
+public class MainClass {
+    
+    public static void main(String[] args){
+        
+        SavingsAccount sa01 = new SavingsAccount("Joe", 100, 1);
+        
+        CheckingAccount ca01 = new CheckingAccount("Emily", 200, 10);
+        
+        ca01.deposit(50);
+        
+        sa01.withdraw(25);
+        
+        ca01.processCheck(50);
+        
+        ca01.withdraw(100);
+        
+        sa01.deposit(100);
+        
+        SavingsAccount sa02 = new SavingsAccount("Sam", 250, 0.5);
+        
+        sa01.depositMonthlyInterest();
+        
+        sa01.depositMonthlyInterest();
+        
+        ca01.withdraw(500);
+        
+        sa01.withdraw(500);
+        
+    }
+    
+}
